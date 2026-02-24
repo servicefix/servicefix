@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt – ServiceFix Städ & Flytt</title>
+  <meta name="description" content="Kontakta ServiceFix Städ & Flytt för offert på städ eller flytt i hela Sverige.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">ServiceFix <span>Städ & Flytt</span></div>
+
+    <nav class="links">
+      <a href="index.html">Hem</a>
+      <a href="priser.html">Priser</a>
+      <a href="om-oss.html">Om oss</a>
+    </nav>
+
+    <div class="headerActions">
+      <a class="btn primary" href="#form">Begär offert</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="card">
+  <h1 style="margin:0 0 14px;">Kontakta oss</h1>
+
+  <p class="lead">
+    Behöver du hjälp med städning eller flytt?  
+    Skicka en offertförfrågan så återkommer vi snabbt.
+  </p>
+
+  <div class="bullets">
+    <div class="bullet"><span class="tick">✓</span> Svar inom 24 timmar</div>
+    <div class="bullet"><span class="tick">✓</span> Tydlig offert utan dolda avgifter</div>
+    <div class="bullet"><span class="tick">✓</span> Service i hela Sverige</div>
+  </div>
+</section>
+
+<section class="card" id="form" style="margin-top:20px;">
+  <h2 style="margin:0 0 12px;">Skicka meddelande</h2>
+
+  <form action="https://formspree.io/f/mvzbvokb" method="POST">
+
+    <div class="row">
+      <div>
+        <label>Namn</label>
+        <input type="text" name="name" required>
+      </div>
+
+      <div>
+        <label>Telefon</label>
+        <input type="text" name="phone" required>
+      </div>
+    </div>
+
+    <label>E-post</label>
+    <input type="email" name="email" required>
+
+    <label>Tjänst</label>
+    <select name="service" required>
+      <option>Hemstäd</option>
+      <option>Kontorsstädning</option>
+      <option>Flyttstäd</option>
+      <option>Flytt & Transport</option>
+      <option>Annat</option>
+    </select>
+
+    <label>Ort</label>
+    <input type="text" name="city" placeholder="T.ex. Malmö" required>
+
+    <label>Meddelande</label>
+    <textarea name="message" placeholder="Beskriv uppdraget..." required></textarea>
+
+    <input type="hidden" name="_subject" value="Ny offertförfrågan – ServiceFix Städ & Flytt">
+
+    <button class="btn green" type="submit" style="margin-top:15px; width:100%;">
+      Skicka
+    </button>
+
+  </form>
+</section>
+
+<section class="card" style="margin-top:20px;">
+  <h2 style="margin:0 0 12px;">Direktkontakt</h2>
+
+  <p class="note">📞 Telefon: <a href="tel:+46728464356">072-846 43 56</a></p>
+  <p class="note">📧 E-post: <a href="mailto:servicefix.flytt.stad@gmail.com">servicefix.flytt.stad@gmail.com</a></p>
+
+  <div style="margin-top:15px;">
+    <a class="btn green" target="_blank"
+       href="https://wa.me/46728464356?text=Hej%20ServiceFix!%20Jag%20vill%20ha%20en%20offert.">
+       WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer>
+  © <span data-year></span> ServiceFix Städ & Flytt – Hela Sverige
+</footer>
+
+</main>
+
+<a class="fab" target="_blank"
+   href="https://wa.me/46728464356?text=Hej%20ServiceFix!%20Jag%20vill%20ha%20en%20offert.">
+   WhatsApp
+</a>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
